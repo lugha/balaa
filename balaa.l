@@ -56,17 +56,22 @@
 
 (defun balaa ()
   (let* ((stemmers (list
-                    ;; (make-stemmer :name "Mohamed Eldesouki"
-                    ;;               :call 'run-python-stemmer
-                    ;;               :cmd
-                    ;;               "stemmers/arabic_processing_cog.py")
+                    (make-stemmer :name "Mohamed Eldesouki"
+                                  :call 'run-python-stemmer
+                                  :cmd
+                                  "stemmers/arabic_processing_cog.py")
+                    (make-stemmer :name "ntlk"
+                                  :call 'run-python-stemmer
+                                  :cmd
+                                  "stemmers/ntlk.py")
                     (make-stemmer :name "Snowball"
                                   :call 'run-cli-stemmer
-                                  :cmd "/home/l/gits/balaa/stemmers/light"))))
+                                  :cmd "/home/l/gits/balaa/stemmers/slight")
+                    )))
     (do* ((stemmer stemmers (cdr stemmer))
           (s (car stemmer) (car stemmer)))
          ((null stemmer))
-      ;; use car stemmer
+      (format t "~%Testing: ~A~%" (stemmer-name s))
       (do* ((lst *samples* (cdr lst))
             (morph (car (car lst)) (car (car lst))))
            ((null lst))
