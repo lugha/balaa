@@ -1,3 +1,6 @@
 [submodule "stemmers/AlKhalil1.1"]
 	path = stemmers/AlKhalil1.1
 	url = https://github.com/luggages/AlKhalil1.1
+[submodule "stemmers/ArabicProcessingCog"]
+	path = stemmers/arabic_processing_cog
+	url = https://github.com/luggages/ArabicProcessingCog
