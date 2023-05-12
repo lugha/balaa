@@ -8,7 +8,7 @@
 
 
 (load "samples.l")
-(sb-posix:chdir "stemmers")
+(sb-posix:chdir "/home/l/gits/arch/balaa/stemmers/")
 
 (defstruct stemmer
   name
@@ -22,7 +22,6 @@
         (read-sequence string instream)
         string))))
 
-(defparameter *py-arabic-processing-cog* (read-file-as-string))
 (defparameter *my-timings* nil)
                                           
 
@@ -40,21 +39,40 @@
         #\Linefeed #\Page #\Return #\Rubout)
       output-string))))
 
+
+(defun run-cli-stemmer (cmd word)
+  (let* ((output-stream (make-string-output-stream))
+         (process (sb-ext:run-program cmd
+                                      (list word)
+                                      :output output-stream)))
+    (process-wait process)
+    (let ((output-string (get-output-stream-string output-stream)))
+      (close output-stream)
+      (string-trim
+      '(#\Space #\Newline #\Backspace #\Tab
+        #\Linefeed #\Page #\Return #\Rubout)
+      output-string))))
+
+
 (defun balaa ()
-  (let* ((stemmers (list (make-stemmer :name "Mohamed Eldesouki"
-                                       :call 'run-python-stemmer
-                                       :cmd
-                                       "stemmers/arabic_processing_cog.py"))))
+  (let* ((stemmers (list
+                    ;; (make-stemmer :name "Mohamed Eldesouki"
+                    ;;               :call 'run-python-stemmer
+                    ;;               :cmd
+                    ;;               "stemmers/arabic_processing_cog.py")
+                    (make-stemmer :name "Snowball"
+                                  :call 'run-cli-stemmer
+                                  :cmd "/home/l/gits/balaa/stemmers/light"))))
     (do* ((stemmer stemmers (cdr stemmer))
           (s (car stemmer) (car stemmer)))
-        ((null stemmer))
+         ((null stemmer))
       ;; use car stemmer
       (do* ((lst *samples* (cdr lst))
             (morph (car (car lst)) (car (car lst))))
            ((null lst))
         (format t "Morth: ~A~%~%" morph)
         (do* ((word (cdr (car lst)) (cdr word))
-             (wrong 0))
+              (wrong 0))
              ((null word) (format t "~%~A:OUT-OF:~A~%~%" (- (length (cdr (car lst))) wrong)
                                   (length (cdr (car lst)))))
           (let* ((run (get-internal-run-time))
