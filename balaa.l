@@ -75,7 +75,7 @@
       (do* ((lst *samples* (cdr lst))
             (morph (car (car lst)) (car (car lst))))
            ((null lst))
-        (format t "Morth: ~A~%~%" morph)
+        (format t "Morpho: ~A~%~%" morph)
         (do* ((word (cdr (car lst)) (cdr word))
               (wrong 0))
              ((null word) (format t "~%~A:OUT-OF:~A~%~%" (- (length (cdr (car lst))) wrong)
