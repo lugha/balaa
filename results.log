@@ -1,0 +1,306 @@
+Testing: Mohamed Eldesouki
+Morpho: استفعل
+
+Got استخرج wanted خرج
+Time: 76.66599
+Got استرحم wanted رحم
+Time: 59.999996
+Got استغفر wanted غفر
+Time: 56.666996
+Got استخبر wanted خبر
+Time: 63.332996
+
+0:OUT-OF:4
+
+Morpho: مفعال
+
+Got ميز wanted وزن
+Time: 59.999996
+Got مفتاح wanted فتح
+Time: 59.998997
+Got منشار wanted نشر
+Time: 63.332996
+
+0:OUT-OF:3
+
+Morpho: مفعلة
+
+Got مكنس wanted كنس
+Time: 56.666996
+Got مدخن wanted دخن
+Time: 59.999996
+Got مدفأ wanted دفء
+Time: 66.66599
+
+0:OUT-OF:3
+
+Morpho: فاعلة
+
+Got قاطر wanted قطر
+Time: 59.999996
+Got كاسح wanted كسح
+Time: 56.665997
+Got رافع wanted رفع
+Time: 63.333996
+
+0:OUT-OF:3
+
+Morpho: إفعال
+
+Got إسحار wanted سحر
+Time: 63.332996
+
+0:OUT-OF:1
+
+Morpho: فواعل
+
+Got جوائز wanted جاز
+Time: 56.666996
+Got ضوارب wanted ضرب
+Time: 66.66599
+
+0:OUT-OF:2
+
+Morpho: فعلاء
+
+Got بيداء wanted بيد
+Time: 59.998997
+Got رخضاء wanted رخص
+Time: 59.999996
+Got نفساء wanted نفس
+Time: 59.998997
+
+0:OUT-OF:3
+
+Morpho: تعبيرات مختلفة
+
+Got متلاعب wanted لعب
+Time: 59.999996
+Got مؤرخ wanted أرخ
+Time: 59.999996
+Got مؤرخ wanted أرخ
+Time: 63.332996
+Got دائم wanted دوم
+Time: 56.665997
+Got حياء wanted حيي
+Time: 59.999996
+Got قوا wanted قوى
+Time: 59.999996
+Got استطعنا wanted طوع
+Time: 59.999996
+Got مرحبا wanted رحب
+Time: 59.998997
+Got طعام wanted طعم
+Time: 59.999996
+Got جميل wanted جمل
+Time: 59.999996
+Got سما wanted سمو
+Time: 63.333996
+Got عز wanted عزز
+Time: 73.33299
+Got استب wanted بين
+Time: 59.999996
+Time: 49.998997
+Got مياد wanted ميد
+Time: 56.665997
+Got مُستقَل wanted قلل
+Time: 63.332996
+
+1:OUT-OF:16
+
+
+TOTAL 1 OUT-OF 35
+
+Testing: ntlk
+Morpho: استفعل
+
+Time: 976.66296
+Time: 959.996
+Time: 953.3289
+Time: 1019.9959
+
+4:OUT-OF:4
+
+Morpho: مفعال
+
+Got ميز wanted وزن
+Time: 1036.663
+Time: 1043.329
+Time: 1013.3289
+
+2:OUT-OF:3
+
+Morpho: مفعلة
+
+Time: 1039.996
+Time: 1036.662
+Got دفأ wanted دفء
+Time: 1039.996
+
+2:OUT-OF:3
+
+Morpho: فاعلة
+
+Time: 1029.996
+Time: 1016.6619
+Time: 1029.996
+
+3:OUT-OF:3
+
+Morpho: إفعال
+
+Time: 1019.9959
+
+1:OUT-OF:1
+
+Morpho: فواعل
+
+Got جئز wanted جاز
+Time: 1053.329
+Time: 1039.996
+
+1:OUT-OF:2
+
+Morpho: فعلاء
+
+Got يدء wanted بيد
+Time: 1059.995
+Got رخضاء wanted رخص
+Time: 1056.663
+Got فسء wanted نفس
+Time: 1016.6619
+
+0:OUT-OF:3
+
+Morpho: تعبيرات مختلفة
+
+Got لاعب wanted لعب
+Time: 1023.3289
+Got ؤرخ wanted أرخ
+Time: 1019.9959
+Got ؤرخ wanted أرخ
+Time: 1039.996
+Got دئم wanted دوم
+Time: 1013.3289
+Got حيء wanted حيي
+Time: 1279.996
+Got قوه wanted قوى
+Time: 1059.995
+Got سطع wanted طوع
+Time: 1029.996
+Time: 1056.662
+Time: 1026.662
+Time: 1029.996
+Got سما wanted سمو
+Time: 1026.663
+Got عزة wanted عزز
+Time: 1063.329
+Got ستب wanted بين
+Time: 1026.662
+Time: 1219.9949
+Got ياد wanted ميد
+Time: 956.66296
+Got سقل wanted قلل
+Time: 959.996
+
+4:OUT-OF:16
+
+
+TOTAL 17 OUT-OF 35
+
+Testing: Snowball
+Morpho: استفعل
+
+Time: 9.999999
+Time: 19.999998
+Time: 16.667
+Time: 16.665998
+
+4:OUT-OF:4
+
+Morpho: مفعال
+
+Got ميز wanted وزن
+Time: 16.667
+Got فاح wanted فتح
+Time: 16.665998
+Got شار wanted نشر
+Time: 16.667
+
+0:OUT-OF:3
+
+Morpho: مفعلة
+
+Time: 13.332999
+Time: 16.667
+Got مدفء wanted دفء
+Time: 16.665998
+
+2:OUT-OF:3
+
+Morpho: فاعلة
+
+Time: 13.334
+Time: 16.665998
+Time: 16.667
+
+3:OUT-OF:3
+
+Morpho: إفعال
+
+Time: 13.332999
+
+1:OUT-OF:1
+
+Morpho: فواعل
+
+Got جوز wanted جاز
+Time: 16.667
+Time: 16.665998
+
+1:OUT-OF:2
+
+Morpho: فعلاء
+
+Got داء wanted بيد
+Time: 13.334
+Got رخض wanted رخص
+Time: 13.332999
+Time: 16.667
+
+1:OUT-OF:3
+
+Morpho: تعبيرات مختلفة
+
+Got متلاعب wanted لعب
+Time: 13.332999
+Got ورخ wanted أرخ
+Time: 16.665998
+Got ورخ wanted أرخ
+Time: 16.667
+Got ديم wanted دوم
+Time: 13.332999
+Got حيء wanted حيي
+Time: 13.334999
+Got قوا wanted قوى
+Time: 16.665998
+Got سطع wanted طوع
+Time: 13.332999
+Time: 13.334
+Time: 16.665998
+Time: 16.667
+Got سما wanted سمو
+Time: 13.332999
+Got لعز wanted عزز
+Time: 16.667
+Got ستب wanted بين
+Time: 16.665998
+Time: 19.999998
+Time: 19.999998
+Got سقل wanted قلل
+Time: 13.332999
+
+5:OUT-OF:16
+
+
+TOTAL 17 OUT-OF 35
