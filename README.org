@@ -1,0 +1,4 @@
+*Current status of this project is prototype. Nothing of use here*.
+
+If you need to run the code, make sure [[https://www.sbcl.org/][sbcl]] is properly installed, and change
+paths inside [[file:balaa.l][balaa.l]] to match your file system. Results are sorted at [[file:results.log]].
