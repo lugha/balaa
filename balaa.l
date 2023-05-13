@@ -92,4 +92,4 @@
                   (progn
                     (format t "Got ~A wanted ~A~%" got wanted)
                     (setf wrong (+ wrong 1)))))
-            (format t "Time: ~A~%" real)))))))
+            (format t "Time: ~A~%" (/ (- (get-internal-real-time) real) internal-time-units-per-second 0.001))))))))
